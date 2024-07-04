@@ -253,11 +253,13 @@ tr:last-child td, tr:last-child th {
         left: -1em;
         top: -0.24em;
     }		
-    		
-    .preparation-time li:first-child::before {			
-    	top: 0.3em;
+
+    @media (max-width: 379px) {
+        .preparation-time li:first-child::before {			
+            top: 0.3em;
+        }
     }
-    
+
     section {
         padding: 0 32px;
     }
