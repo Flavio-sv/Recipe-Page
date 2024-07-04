@@ -1,8 +1,8 @@
-# Recipe-Page
+# Recipe Page
 
 <h6><a href="https://github.com/Flavio-sv/Recipe-Page/blob/main/README-pt-br.md">🇧🇷: Leia este documento em português </a></h6>
 
-This static project was developed using HTML and CSS as part of the challenges posed by [Frontend Mentor](https://www.frontendmentor.io/).
+This static page project was developed using HTML and CSS as part of the challenges proposed by [Frontend Mentor](https://www.frontendmentor.io/).
 
 ## Project Overview
 
