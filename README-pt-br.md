@@ -1,12 +1,12 @@
-# Perfil de Links Sociais
+# Página de Receita
 
 <h6> <a href="https://github.com/Flavio-sv/Recipe-Page/blob/main/README.md"> 🇺🇸: Read this document in English</a> </h6>
 
-Este projeto estático foi desenvolvido usando HTML e CSS como parte dos desafios propostos pelo [Frontend Mentor](https://www.frontendmentor.io/).
+Este projeto de página estática foi desenvolvido usando HTML e CSS como parte dos desafios propostos pelo [Frontend Mentor](https://www.frontendmentor.io/).
 
 ## Visão Geral do Projeto
 
-O projeto envolve o desenvolvimento de uma interface de página de receitas, que é simples e responsiva, permitindo o acesso tanto em computadores quanto em dispositivos móveis.
+O projeto envolve o desenvolvimento de uma interface de página de receita, que é simples e responsiva, permitindo o acesso tanto em computadores quanto em dispositivos móveis.
 
 ## Pré-visualização
 
