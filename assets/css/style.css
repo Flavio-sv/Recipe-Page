@@ -30,20 +30,18 @@ body {
     line-height: 1.5;
     display: flex;
     justify-content: center;
-    min-height: calc(100vh + 123px);
     background-color: var(--color-eggshell);
+    align-items: center;
+    min-height: 100vh;
 }
 
 main {
-    width: 100%;
     max-width: clamp(270px, 100% - 48px, 736px);
-    min-height: 1708px;
     background-color: var(--color-white);
     color: var(--color-wenge-brown);
     padding: 40px 40px 39px;
     border-radius: 23px;
-    margin: 123px 0;
-    flex-shrink: 0;
+    margin: 123px 0 124px;
 }
 
 header img {
@@ -58,7 +56,6 @@ header h1 {
     color: var(--color-dark-charcoal);
     margin-top: 31px;
     font-family: 'Young Serif', sans-serif;
-    display: inline-block;
 }
 
 header p {
@@ -110,7 +107,7 @@ header p {
 }
 
 .ingredients li {
-    font-size: 1.0013rem;
+    font-size: 1.0016rem;
     padding-left: 12px;
     margin-bottom: 7.8px;
     margin-left: 28px;
@@ -122,7 +119,7 @@ header p {
     content: "•";
     position: absolute;
     left: -0.98em;
-    top: -0.19em;
+    top: -0.18em;
     color: var(--color-nutmeg);
     font-size: 1.36rem;
 }
@@ -209,7 +206,6 @@ tr:last-child td, tr:last-child th {
     main {
         line-height: 1;
         max-width: 100%;
-        min-height: 100vh;
         border-radius: 0;
         margin: 0;
         padding: 0 0 44px;
@@ -253,13 +249,13 @@ tr:last-child td, tr:last-child th {
         left: -1em;
         top: -0.24em;
     }		
-
+    		
     @media (max-width: 379px) {
         .preparation-time li:first-child::before {			
             top: 0.3em;
         }
     }
-
+    
     section {
         padding: 0 32px;
     }
@@ -289,10 +285,6 @@ tr:last-child td, tr:last-child th {
 
     .instructions h2 {
         margin: 33px 0 23px;
-    }
-
-    .instructions ol {
-        counter-reset: list-counter;
     }
 
     .instructions ol li {
