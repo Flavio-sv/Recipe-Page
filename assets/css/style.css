@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-nutmeg: hsl(14, 45%, 36%);
+    --color-dark-raspberry: hsl(332, 51%, 32%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-rose-white: hsl(330, 100%, 98%);
+    --color-eggshell: hsl(30, 54%, 90%);
+    --color-light-grey: hsl(0, 0%, 88%);
+    --color-wenge-brown: hsl(30, 10%, 34%);
+    --color-dark-charcoal: hsl(24, 5%, 18%);
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Young Serif';
+    src: url('../fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh + 123px);
+    background-color: var(--color-eggshell);
+}
+
+main {
+    width: 100%;
+    max-width: clamp(270px, 100% - 48px, 736px);
+    min-height: 1708px;
+    background-color: var(--color-white);
+    color: var(--color-wenge-brown);
+    padding: 40px 40px 39px;
+    border-radius: 23px;
+    margin: 123px 0;
+    flex-shrink: 0;
+}
+
+header img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+
+header h1 {
+    font-size: 2.501rem;
+    font-weight: 400;
+    color: var(--color-dark-charcoal);
+    margin-top: 31px;
+    font-family: 'Young Serif', sans-serif;
+    display: inline-block;
+}
+
+header p {
+    font-size: 1.001rem;
+    margin-top: 13px;
+}
+
+.preparation-time {
+    background-color: var(--color-rose-white);
+    color: var(--color-wenge-brown);
+    box-shadow: 0px 0px 2px 0px var(--color-rose-white);
+    border-radius: 15px;
+    padding: 23px 28px 28px;
+    margin-top: 32px;
+}
+
+.preparation-time h2 {
+    color: var(--color-dark-raspberry);
+    font-size: 1.255rem;
+    margin-bottom: 11px;
+    font-weight: 600;
+}
+
+.preparation-time li {
+    font-size: 1.003rem;
+    padding-left: 12px;
+    margin-top: 8px;
+    margin-left: 28px;
+    list-style: none;
+    position: relative;
+}
+
+.preparation-time li::before {
+    content: "•";
+    position: absolute;
+    left: -0.98em;
+    top: -0.19em;
+    color: var(--color-dark-raspberry);
+    font-size: 1.36rem;
+}
+
+.ingredients h2 {
+    font-size: 1.75rem;
+    transform: scaleY(1.019);
+    font-weight: 400;
+    color: var(--color-nutmeg);
+    font-family: 'Young Serif', sans-serif;
+    margin: 26px 0 16px;
+}
+
+.ingredients li {
+    font-size: 1.0013rem;
+    padding-left: 12px;
+    margin-bottom: 7.8px;
+    margin-left: 28px;
+    list-style: none;
+    position: relative;
+}
+
+.ingredients li::before {
+    content: "•";
+    position: absolute;
+    left: -0.98em;
+    top: -0.19em;
+    color: var(--color-nutmeg);
+    font-size: 1.36rem;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--color-light-grey);
+    margin-top: 31px;
+}
+
+.instructions h2 {
+    font-size: 1.75rem;
+    transform: scaleY(1.019);
+    font-weight: 400;
+    color: var(--color-nutmeg);
+    font-family: 'Young Serif', sans-serif;
+    margin: 26px auto 16px;
+}
+
+.instructions ol {
+    list-style-type: none;
+    counter-reset: list-counter;
+    font-family: 'Outfit', sans-serif;
+}
+
+.instructions ol li {
+    counter-increment: list-counter;
+    position: relative;
+    font-size: 1.001rem;
+    padding-left: 15px;
+    margin-left: 25px;
+    margin-bottom: 8px;
+}
+
+.instructions ol li::before {
+    content: counter(list-counter) ". ";
+    color: var(--color-nutmeg);
+    font-weight: 700;
+    position: absolute;
+    left: -1.04em;
+    font-family: 'Outfit', sans-serif;
+}
+
+.nutrition h2 {
+    color: var(--color-nutmeg);
+    font-family: 'Young Serif', sans-serif;
+    font-weight: 400;
+    margin: 26px auto 16px;
+    font-size: 1.75rem;
+    transform: scaleY(1.019);
+}
+
+.nutrition p {
+    font-size: 1.001rem;
+    margin-bottom: 12px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table tr:not(:last-child) {
+    border-bottom: 1px solid var(--color-light-grey);
+}
+
+td, th {
+    font-size: 1.01rem;
+    padding: 12px 0 10.9px 32px;
+}
+
+tr:last-child td, tr:last-child th {
+    padding-bottom: 0;
+}
+
+.nutrition-value-color {
+    font-weight: 700;
+    color: var(--color-nutmeg);
+    padding-right: 17px;
+}
+
+@media (max-width: 466px) {
+    main {
+        line-height: 1;
+        max-width: 100%;
+        min-height: 100vh;
+        border-radius: 0;
+        margin: 0;
+        padding: 0 0 44px;
+    }
+
+    header img {
+        border-radius: 0;
+    }
+
+    header h1 {
+        font-size: 2.25rem;
+        transform: scaleY(1);
+        padding: 0 32px;
+        margin: 40px 0 0;
+    }
+
+    header p {
+        font-size: 1rem;
+        margin-top: 24px;
+        padding: 0 32px;
+        line-height: 1.5;
+    }
+
+    .preparation-time {
+        line-height: 1.49;
+        border-radius: 15px;
+        margin: 32px 32px 0;
+        padding: 19px 24px 23px;
+    }
+
+    .preparation-time h2 {
+        font-size: 1.25rem;
+        margin-bottom: 12px;
+    }
+
+    .preparation-time li {
+        font-size: 1rem;
+    }
+
+    .preparation-time li::before {
+        left: -1em;
+        top: -0.24em;
+    }		
+    		
+    .preparation-time li:first-child::before {			
+    	top: 0.3em;
+    }
+    
+    section {
+        padding: 0 32px;
+    }
+
+    .ingredients h2 {
+        margin: 33px 0 23px;
+    }
+
+    .ingredients li {
+        margin-bottom: 8px;
+        line-height: 1.5;
+        font-size: 1rem;
+    }
+
+    .ingredients li::before {
+        left: -1em;
+        top: -0.18em;
+    }
+
+    .ingredients li:last-child::before {
+        top: 0.4em;
+    }
+
+    hr {
+        margin: 31px 32px 0;
+    }
+
+    .instructions h2 {
+        margin: 33px 0 23px;
+    }
+
+    .instructions ol {
+        counter-reset: list-counter;
+    }
+
+    .instructions ol li {
+        margin-bottom: 8px;
+        line-height: 1.5;
+        font-size: 1rem;
+    }
+
+    .instructions ol li::before {
+        left: -1.07em;
+    }
+
+    .nutrition h2 {
+        margin: 33px 0 23px;
+    }
+
+    .nutrition p {
+        line-height: 1.5;
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+
+    td, th {
+        font-size: 1rem;
+        padding-top: 16px;
+        padding-bottom: 15px;
+    }
+
+    .nutrition-value-color {
+        padding-right: 36px;
+    }
+}
